@@ -10,8 +10,8 @@ const Cards = () => {
 
                        <div> <h2 className="mb-0">Yangiliklar</h2></div>
                        <div className="d-flex justify-content-start align-items-center">
-                           <img className="mr-3" src="./images/arrow-left.png" alt=""/>
-                           <img src="./images/arrow-right.png" alt=""/>
+                           <button className="btn"><img className="mr-3" src="./images/arrow-left.png" alt=""/></button>
+                           <button className="btn"><img src="./images/arrow-right.png" alt=""/></button>
                        </div>
 
                    </div>
@@ -113,8 +113,8 @@ const Cards = () => {
 
                        <div> <h2 className="mb-0">Korxonamiz yangiliklari</h2></div>
                        <div className="d-flex justify-content-start align-items-center">
-                           <img className="mr-3" src="./images/arrow-left.png" alt=""/>
-                           <img src="./images/arrow-right.png" alt=""/>
+                           <button className="btn"><img className="mr-3" src="./images/arrow-left.png" alt=""/></button>
+                           <button className="btn"><img src="./images/arrow-right.png" alt=""/></button>
                        </div>
 
                    </div>

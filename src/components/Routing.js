@@ -8,9 +8,6 @@ import SecondPage from "./SecondPage";
 const Routing = () => {
     return (
        <BrowserRouter>
-           {/*<FirstPage/>*/}
-           {/*<FirstPage/>*/}
-
            <Switch>
                <Route path="/" exact component={FirstPage} />
                <Route path="/second" exact component={SecondPage}/>

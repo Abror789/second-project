@@ -21,15 +21,23 @@ body{
         border: none;
       }
     }
-    h4{
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 17px;
-      display: flex;
-      align-items: center;
-      color: rgba(0, 0, 0, 0.8);
-      opacity: 0.7;
-      margin-right: 45px;
+    //h4{
+    //  font-weight: 500;
+    //  font-size: 14px;
+    //  line-height: 17px;
+    //  display: flex;
+    //  align-items: center;
+    //  color: rgba(0, 0, 0, 0.8);
+    //  opacity: 0.7;
+    //  margin-right: 45px;
+    //}
+    .inputs{
+      height: 90%;
+      margin-right:45px;
+      .form-control{
+        padding: 5px;
+        height: 100%;
+      }
     }
     .btn1{
       border: 1px solid #008F48;
@@ -72,6 +80,23 @@ body{
       color: #000000;
       opacity: 0.7;
       margin-left: 35px;
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+        background-color: #0D374B;
+        width: 0;
+        height: 2px;
+        transition: all 0.5s linear;
+      }
+      &:hover:after{
+        width: 100%;
+      }
+      &:hover{
+        color: #5E5E5E;
+      }
     }
   }
   .container-1{

@@ -21,13 +21,19 @@ const Nav = () => {
 
                     <div className="col-12 col-md-6 col-lg-6 d-flex justify-content-end align-items-center ">
 
-                           <div> <h4 className="mb-0">На русском</h4></div>
+                       <div className="inputs">
+                           <select className="form-control" >
+                               <option>O'zbekcha</option>
+                               <option>Русский</option>
+
+                           </select>
+                       </div>
 
 
-                            <div className="btn1 d-flex align-items-center justify-content-start">
+                            <button className="btn btn1 d-flex align-items-center justify-content-start">
                                 <img src="./images/phone.png" alt=""/>
                                 <p className="mb-0">99872 335-41-16</p>
-                            </div>
+                            </button>
 
 
                     </div>

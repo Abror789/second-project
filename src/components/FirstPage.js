@@ -10,13 +10,12 @@ import Footer from "./Footer";
 const FirstPage = () => {
     return (
         <div>
-            <Nav/>
-            <NavMain/>
+
             <Header/>
             <Cards/>
             <Tabs/>
             <Partners/>
-            <Footer/>
+
 
         </div>
     );

@@ -10,11 +10,10 @@ import Footer from "./Footer";
 const SecondPage = () => {
     return (
         <div>
-            <Nav/>
-            <NavMain/>
+
             <Info/>
             <CardsSecond/>
-            <Footer/>
+
 
         </div>
     );
