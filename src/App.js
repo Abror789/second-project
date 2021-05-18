@@ -8,18 +8,35 @@ import Footer from "./components/Footer";
 import FirstPage from "./components/FirstPage";
 import SecondPage from "./components/SecondPage";
 import Login from "./components/Login";
+import AdminMenus from "./components/AdminMenus";
+import AdminNews from "./components/AdminNews";
 
 const App = () => {
+
   return (
       <BrowserRouter>
-          <Nav/>
-          <NavMain/>
+          {window.location.href.includes("/admin") ? "" :
+              <Nav/>
+
+          }
+          {window.location.href.includes("/admin") ? "" :
+
+              <NavMain/>
+          }
+
           <Switch>
               <Route path="/" exact component={FirstPage}/>
               <Route path="/second" exact component={SecondPage}/>
               <Route path="/login" exact component={Login}/>
+              <Route path="/admin/menus" component={AdminMenus}/>
+              <Route path="/admin/news" component={AdminNews}/>
           </Switch>
-          <Footer/>
+
+          {window.location.href.includes("/admin") ? "" :
+
+              <Footer/>
+          }
+
 
 
 
